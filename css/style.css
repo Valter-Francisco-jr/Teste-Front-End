@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fundo preto para qualquer plataforma */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* container centralizado para desktop */
+.container {
+    display: flex;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* container centralizado para Tablet */
+    @media screen and (max-width: 900px) {
+        .container {
+            background-color: white;
+            position: absolute;
+            width: 600px;
+            height: 500px;
+            top: 50%;
+            right: 75%;
+            transform: translate(-50%,-50%);
+        }
+            
+    }
+
+/* container para Mobile */
+    @media screen and (max-width: 720px) {
+        .container {
+            background-color: white;
+            position: absolute;
+            width: 400px;
+            height: 350px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+    }        
+
+/* texto título para Desktop */
+main h2 {
+    color: #fd284b;
+    position: absolute;
+    top: 67px;
+    left: 56px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* texto paragrafo da cor preta para Desktop */
+main p {
+    color: black;
+    position: relative;
+    top: 155px;
+    left: 34px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/* texto paragrafo da cor preta para Tablet */
+@media screen and (max-width: 900px) {
+    main p {
+    color: black;
+    position: absolute;
+    top: 145px;
+    left: 320px;
+    font-size: 18px;
+    text-align: center;
+
+    }
+}
+
+/* texto título para Tablet */
+@media screen and (max-width: 900px) {
+    main h2 {
+    color: #fd284b;
+    position: absolute;
+    top: 65px;
+    left: 340px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    }
+}
+
+/* texto título para Mobile */
+@media screen and (max-width: 720px) {
+    main h2 {
+    color: #fd284b;
+    position: absolute;
+    top: 60px;
+    left: 57%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+    }
+}
+
+/* texto paragrafo da cor preta para Mobile */
+@media screen and (max-width: 720px) {
+    main p {
+    color: black;
+    position: absolute;
+    top: 120px;
+    left: 54%;
+    font-size: 12px;
+    text-align: center;
+
+    }
+}
+
+/* imagem  centralizada a esquerda para Tablet */
+@media screen and (min-width: 900px) {
+    #tablet-imagem {
+        display: none;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* imagem tablet desativada para Mobile */
+@media screen and (max-width: 720px) {
+    #tablet-imagem {
+        display: none;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* imagem centralizado a direita para Mobile */
+@media screen and (min-width: 720px) {
+    #imagem {
+        display: none;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* foto resolução para Desktop */
+@media screen and (min-width: 900px) {
+    .foto-modelo {
+    position: absolute;
+    top: 252px;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    }
+}
+
+/* foto Desktop desativada para mobile e tablet */
+@media screen and (max-width: 900px) {
+    .foto-modelo {
+        display: none;
+    }
+}
+
+/* Campo Nome e E-mail Desktop */
+form input {
+    width: 300px;
+    position: relative;
+    height: 45px;
+    border: 1px solid #cbcbcb;
+    top: 258px;
+    padding: 2px;
+    margin-left: -255px;
+    margin-top: 10px;
+    cursor: text;
+}
+
+/* Campo butão Nome e E-mail Tablet */
+@media screen and (max-width: 900px) {
+    form input {
+        width: 260px;
+        position: relative;
+        height: 45px;
+        border: 1px solid #cbcbcb;
+        top: 250px;
+        padding: 2px;
+        margin-left: 16px;
+        margin-top: 10px;
+        cursor: text;
+    }
+}
+
+/* Campo Nome e E-mail Mobile */
+@media screen and (max-width: 720px) {
+    form input {
+    width: 170px;
+    position: relative;
+    height: 30px;
+    border: 1px solid #cbcbcb;
+    top: 180px;
+    padding: 2px;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: text;
+    }
+}
+
+/* botão ação "Assinar" para Desktop */
+form button {
+    background-color: black;
+    color: white;
+    width: 300px;
+    position: relative;
+    height: 45px;
+    top: 258px;
+    margin-left: -255px;
+    border: 0;
+    margin-top: 20px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+/* botão ação "Assinar" para Tablet */
+@media screen and (max-width: 900px) {
+    form button {
+        background-color: black;
+        color: white;
+        width: 260px;
+        position: relative;
+        height: 45px;
+        top: 258px;
+        margin-left: 16px;
+        border: 0;
+        margin-top: 20px 0;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+/* botão ação "Assinar" para Mobile */
+@media screen and (max-width: 720px) {
+    form button {
+    background-color: black;
+    color: white;
+    width: 170px;
+    position: relative;
+    height: 30px;
+    top: 180px;
+    margin-left: 15px;
+    border: 0;
+    margin-top: 20px 0;
+    cursor: pointer;
+    outline: none;
+
+    }
+}
+
+/* botão ação "Assinar" com cor mais clara ao passar o cursor para qualquer plataforma */
+button:hover {
+    background-color: #706b6b;
+}

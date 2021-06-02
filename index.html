@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLetter</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+       
+        <div class="container">
+
+            <div id="imagem">
+                <img src="img/foto.jpg"  alt="foto-modelo" height="350" width="200" >
+            </div>
+
+            <div id="tablet-imagem">
+                <img src="img/foto.jpg"  alt="foto-modelo" height="500" width="300" >
+            </div>
+
+
+            <figure class="foto-modelo">
+                <img src="img/foto.jpg" alt="foto-modelo">
+            </figure>
+
+            <main>
+
+            <h2>10%OFF NA SUA<br>PRIMEIRA COMPRA</h2>
+
+            <p>Assine nossa newsletter e fique<br>
+                ligada em nossas novidades,<br>
+                dicas e promoções!</p>
+
+            </main>
+
+            <form name="formuser" method="POST" action="salva_mensagem.php">
+
+                <input type="text" name="nome" placeholder="Insira seu nome">
+                <br><br>
+                <input type="text" name="email" placeholder="Insira seu e-mail"><br><br>
+
+                <button type="submit" value="Assinar" onclick="return validar_form_user ()">Assinar</button>
+            </form>
+            
+        </div>
+
+</body>
+</html>
